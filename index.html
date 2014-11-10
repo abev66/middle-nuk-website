@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head lang="zh-tw">
+    <meta charset="UTF-8">
+    <title>國立高雄大學 Nation University of Kaohsiung</title>
+    <style>
+        <!--
+        html {
+            padding: 0;
+            margin: 0;
+            color: #333;
+=        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #logo {
+            width: 285px;
+            height: 60px;
+            z-index: 1000;
+            background: transparent url('images/logo.png') no-repeat;
+            float: right;
+            margin: 0 0 0 30px
+        }
+
+        #top {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 60px;
+            z-index: 500;
+            box-shadow: 0 0 30px #333;
+            padding: 5px 0;
+            margin: 0;
+            background-color: rgba( 255,255,255,0.9 );
+        }
+
+        /* Navigation Bar */
+        #top>nav {
+            padding: 0;
+            margin: 0;
+        }
+
+        #top>nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: block;
+            height: 60px;
+        }
+
+        #top>nav li:after {
+            content: '';
+            display: inline-block;
+            vertical-align: middle ;
+            height: 100%;
+        }
+
+        #top>nav li {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0 15px;
+            margin: 0;
+            text-align: auto;
+            font-size: 1.2em;
+            height: 100%;
+        }
+
+        #top>nav li.pull-right {
+            float: right;
+        }
+
+        #top>nav li.active {
+            text-shadow: 0 0 7px #000;
+            color: #F9F9F9;
+        }
+
+        .content {
+            margin: 0;
+            padding: 100px 0;
+            opacity: 0;
+            transition: opacity 300ms ease;
+            display: none;
+        }
+
+        section.active {
+            opacity: 1;
+            display: block;
+            z-index:250;
+        }
+
+        #students {
+            background: transparent url('images/students.jpg') fixed;
+            background-size: cover;
+        }
+
+        #teachers {
+            background: transparent url('images/teachers.jpg') fixed;
+            background-size: cover;
+        }
+
+        #departments {
+            background: transparent url('images/departments.jpg') fixed;
+            background-size: cover;
+        }
+
+        .box {
+            background-color: rgba( 255,255,255,0.9 );
+            padding: 1.5em 3em 3em 3em;
+            box-shadow: 0px 5px 20px #555;
+            position: relative;
+
+            margin: 4em 0;
+        }
+
+        .box h1 {
+            border-bottom: solid 1px #AAA;
+            color: #555;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .news table {
+            width: 100%;
+        }
+
+        .news td {
+            pading: 3px 0.5em;
+        }
+
+        .news tr>td:last-child {
+            width: 5em;
+        }
+
+        .box-transparent {
+            background: transparent;
+            padding: 0 3em;
+        }
+
+        .box-transparent h3 {
+            text-align: center;
+            color: #FFF;
+            font-size: 1.5em;
+            text-shadow: 0 0 7px #000;
+        }
+
+        .expend-button {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border: 5px solid #000;
+            border-radius: 30px;
+            -webkit-transform: scale(.9999);
+            transform: scale(.9999);
+            box-shadow: 5px 5px 5px #777;
+            background: #FFF;
+            position: absolute;
+            bottom: -30px;
+            right: 10%;
+            text-align: center;
+            transition: opacity 300ms ease;
+            opacity: 0.8;
+        }
+
+        .expend-button:hover {
+            opacity: 1;
+        }
+
+        .expend-button span {
+            text-indent: -9999px;
+            border: 13px solid transparent;
+            border-top: 18px solid #000;
+            -webkit-transform: scale(.9999);
+            transform: scale(.9999);
+            display: block;
+            margin: 18px auto;
+            width: 0;
+        }
+
+        .link-menu {
+            list-style-type: none;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        ul.link-menu li {
+            display: inline-block;
+            margin: 25px 1em;
+
+        }
+
+        ul.link-menu a:hover {
+            background-color: white;
+            text-shadow: none;
+            color: #000;
+        }
+
+        ul.link-menu a {
+            text-decoration: none;
+            padding: 1em;
+            color: #FFF;
+            font-size: 1.2em;
+            text-shadow: 0 0 7px #000;
+            transition: all 250ms ease;
+            border-radius: 5px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .grid {
+            vertical-align: top;
+            display: inline-block;
+            width: 370px;
+            margin: 10px 20px;
+        }
+
+        .grid h3 {
+            color: #777;
+        }
+
+        ul.link-list {
+            list-style-type: none;
+            padding-left: 1em;
+        }
+
+        ul.link-list li {
+            margin: 1em 0;
+        }
+
+        .video-box {
+            display: block;
+            margin: 1em auto;
+        }
+
+        #footer {
+            display:block;
+            width: inherit;
+            padding: 1em;
+            margin: 0;
+            text-align: center;
+            font-size: 85%;
+            color: #777;
+        }
+
+        footer a{
+            color: #777;
+            text-decoration: none;
+        }
+
+        footer a:hover{
+            text-decoration: underline ;
+        }
+
+        address {
+            font-style: normal;
+        }
+        -->
+    </style>
+</head>
+<body>
+    <section id="top">
+        <div id="logo"></div>
+        <nav>
+            <ul>
+                <li class="active" id="mi-students">學生</li>
+                <li id="mi-teachers">老師</li>
+                <li id="mi-new">新生</li>
+                <li id="mi-others">校外</li>
+                <li id="mi-departments">各單位</li>
+                <li class="pull-right" id="mi-about">關於</li>
+            </ul>
+        </nav>
+    </section>
+    <section id="students" class="content active">
+        <div class="box news">
+            <h1>最新消息</h1>
+            <table>
+                <tr>
+                    <td>多益報考報名費優惠網址。 </td>
+                    <td>2014/12/25</td>
+                </tr>
+                <tr>
+                    <td> 11/13(四)應化系敬邀演講 </td>
+                    <td>2014/12/25</td>
+                </tr>
+                <tr>
+                    <td> 語文中心 2014冬季英(外)語文進修班 </td>
+                    <td>2014/12/25</td>
+                </tr>
+                <tr>
+                    <td>103.11.13（四）資訊管理學系演講</td>
+                    <td>2014/12/25</td>
+                </tr>
+                <tr>
+                    <td>畢冊公開說明會廠商投票結果 </td>
+                    <td>2014/12/25</td>
+                </tr>
+            </table>
+            <a class="expend-button"><span>更多</span></a>
+        </div>
+        <div class="box-transparent">
+            <ul class="link-menu">
+                <li><a href="http://elearning.nuk.edu.tw/">教學平台</a></li>
+                <li><a href="http://course.nuk.edu.tw/">選課系統</a></li>
+                <li><a href="http://course.nuk.edu.tw/QueryCourse/QueryCourse.asp">課程查詢</a></li>
+                <li><a href="http://secold.nuk.edu.tw/calendar.asp">行事曆</a></li>
+                <li><a href="http://www.sa.nuk.edu.tw/02life/life021.asp">就學貸款</a></li>
+            </ul>
+        </div>
+        <div class="box center">
+            <h1>校園動態</h1>
+            <article class="grid">
+                <header>
+                    <h3> 2014-10-30 「新聞教父」鄭貞銘 出席卓越講座 談育才</h3>
+                </header>
+                <img src="http://news.nuk.edu.tw/~adnuk/Images/event/IMG_0699_2_re20141028QQ.jpg" alt="" style="display:block; width: 250px; margin: 0 auto;"/>
+                <p>
+                    桃李天下的「新聞教父」鄭貞銘教授，應國立高雄大學之邀擔任高大卓越講座，以「尋找大學的夢」為題發表演說。鄭貞銘認為到大學教書是開人才礦的工作，並以「無愛不成師，無心不成徒」勉勵高大師生，珍惜在大學的一切。
+                <p>
+                    鄭貞銘指出，現代的大學源自歐洲，在三百年前，就已為現代大學樹立標竿：追求真理、國際視野、重視語文。在中世紀，拉丁文是學術主流，當時的大學就已相當重視相互的交流，以擴展師生的國際視野。現今世界著名的哈佛、牛津等大學相當注重博雅教育，就連以理工見長的麻省理工學院也相當重視人文課程，並且希望培育富有知性、理性、感性、血性的青年學子。
+                </p>
+
+            </article>
+            <article class="grid">
+                <header>
+                    <h3>  學務處帶領春暉社及戲劇社學生前進國小宣導反毒</h3>
+                </header>
+                <img src="http://news.nuk.edu.tw/~adnuk/Images/event/DSC05016_1_QOOAA.jpg" alt="" style="display:block; width: 250px; margin: 0 auto;"/>
+                <p>
+                    「面對毒品誘惑，請勇敢大聲說『不』！」國立高雄大學春暉社及戲劇社學生20日至鄰近援中國小進行「紫錐花運動--拒毒萌芽」宣導活動，透過活潑生動戲劇表演，將毒品危害、拒絕技巧傳達給現場上千名學童，同時安排有獎徵答吸引搶答，炒熱氣氛之餘也將「反毒種苗」深植心靈。
+                </p>
+                <p>
+                    為了讓學童牢記千萬不可碰毒，還發送教育部「無毒大丈夫」漫畫，內容強調「拉K一時、尿布一世」的可怕後果。
+                </p>
+
+            </article>
+            <article class="grid">
+                <header>
+                    <h3>  學務處帶領春暉社及戲劇社學生前進國小宣導反毒</h3>
+                </header>
+                <img src="http://news.nuk.edu.tw/~adnuk/Images/event/IMG_0909_1_20141013.jpg" alt="" style="display:block; width: 250px; margin: 0 auto;"/>
+                <p>
+                    國立高雄大學體育室主辦的「高大運動嘉年華」13日晚間開鑼，將進行籃球、羽球、排球、桌球、壘球等多項賽事，12月則邀請傑出運動名人分享訓練奪牌心路歷程。校長黃肇瑞致詞時指出，開幕場地「洪四川運動廣場」為高雄企業家洪四川所捐贈，長期熱心推動體育教育，日前獲教育部表揚，以此勉勵學生除了心懷感念，也能自我期許往後有能力回饋社會、造福學子，綿延不絕善的能量。相關賽程及規則可見體育室網站：http://goo.gl/5KULJW。
+                </p>
+
+            </article>
+            <a class="expend-button"><span>更多</span></a>
+        </div>
+        <div class="box-transparent">
+            <h3>卓越&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;活力&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;熱情</h3>
+        </div>
+        <div class="box">
+            <h1>服務系統</h1>
+
+            <div class="grid">
+                <header>
+                    <h3>學務系統</h3>
+                </header>
+                <ul class="link-list">
+                    <li>就學貸款系統</li>
+                    <li>學雜費減免系統</li>
+                    <li>社團管理系統</li>
+                    <li>生活學習管理系統</li>
+                    <li>請假系統</li>
+                </ul>
+            </div>
+
+            <div class="grid">
+                <header>
+                    <h3>教務系統</h3>
+                </header>
+                <ul class="link-list">
+                    <li>大學生學習成效問卷調查(COLA)</li>
+                    <li>e起來高大教學平台</li>
+                    <li>學生生涯歷程檔案</li>
+                    <li>高東屏跨校中英文檢測平台</li>
+                </ul>
+            </div>
+
+            <div class="grid">
+                <header>
+                    <h3>校園網路資源系統</h3>
+                </header>
+                <ul class="link-list">
+                    <li>學生網路信箱</li>
+                    <li>無線網路</li>
+                    <li>郵件查詢</li>
+                    <li>宿網停權名單</li>
+                    <li>電子資源檢索</li>
+                </ul>
+            </div>
+
+            <div class="grid">
+                <header>
+                    <h3>校園網路資源系統</h3>
+                </header>
+                <ul class="link-list">
+                    <li>學生網路信箱</li>
+                    <li>無線網路</li>
+                    <li>郵件查詢</li>
+                    <li>宿網停權名單</li>
+                    <li>電子資源檢索</li>
+                </ul>
+            </div>
+
+            <div class="grid">
+                <header>
+                    <h3>校園網路資源系統</h3>
+                </header>
+                <ul class="link-list">
+                    <li>學生網路信箱</li>
+                    <li>無線網路</li>
+                    <li>郵件查詢</li>
+                    <li>宿網停權名單</li>
+                    <li>電子資源檢索</li>
+                </ul>
+            </div>
+
+            <div class="grid">
+                <header>
+                    <h3>其他服務系統</h3>
+                </header>
+                <ul class="link-list">
+                    <li>學生網路信箱</li>
+                    <li>無線網路</li>
+                    <li>郵件查詢</li>
+                    <li>宿網停權名單</li>
+                    <li>電子資源檢索</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="teachers" class="content">
+        <div class="box news">
+            <h1>最新消息</h1>
+            <table>
+                <tr>
+                    <td>西洋語文學系碩士班甄試招生！ </td>
+                    <td>2014/12/25</td>
+                </tr>
+                <tr>
+                    <td>國立高雄大學管理學院第五任院長第二次公開遴</td>
+                    <td>2014/12/25</td>
+                </tr>
+                <tr>
+                    <td>教務處誠徵計畫助理(資訊人員)</td>
+                    <td>2014/12/25</td>
+                </tr>
+                <tr>
+                    <td>103.11.13（四）資訊管理學系演講</td>
+                    <td>2014/12/25</td>
+                </tr>
+                <tr>
+                    <td>畢冊公開說明會廠商投票結果 </td>
+                    <td>2014/12/25</td>
+                </tr>
+            </table>
+            <a class="expend-button"><span>更多</span></a>
+        </div>
+        <div class="box-transparent">
+            <ul class="link-menu">
+                <li><a href="http://course.nuk.edu.tw/RoomQuery/RoomMenu.htm">教室使用狀況</a></li>
+                <li><a href="http://aca.nuk.edu.tw/Teach/login.asp">教務系統</a></li>
+                <li><a href="http://stu.nuk.edu.tw/gd/login.asp">導生管理作業</a></li>
+                <li><a href="http://stu.nuk.edu.tw/">學務系統</a></li>
+            </ul>
+        </div>
+        <div class="box center">
+            <h1>校園動態</h1>
+            <article class="grid">
+                <header>
+                    <h3> 2014-10-30 「新聞教父」鄭貞銘 出席卓越講座 談育才</h3>
+                </header>
+                <img src="http://news.nuk.edu.tw/~adnuk/Images/event/IMG_0699_2_re20141028QQ.jpg" alt="" style="display:block; width: 250px; margin: 0 auto;"/>
+                <p>
+                    桃李天下的「新聞教父」鄭貞銘教授，應國立高雄大學之邀擔任高大卓越講座，以「尋找大學的夢」為題發表演說。鄭貞銘認為到大學教書是開人才礦的工作，並以「無愛不成師，無心不成徒」勉勵高大師生，珍惜在大學的一切。
+                <p>
+                    鄭貞銘指出，現代的大學源自歐洲，在三百年前，就已為現代大學樹立標竿：追求真理、國際視野、重視語文。在中世紀，拉丁文是學術主流，當時的大學就已相當重視相互的交流，以擴展師生的國際視野。現今世界著名的哈佛、牛津等大學相當注重博雅教育，就連以理工見長的麻省理工學院也相當重視人文課程，並且希望培育富有知性、理性、感性、血性的青年學子。
+                </p>
+
+            </article>
+            <article class="grid">
+                <header>
+                    <h3>  學務處帶領春暉社及戲劇社學生前進國小宣導反毒</h3>
+                </header>
+                <img src="http://news.nuk.edu.tw/~adnuk/Images/event/DSC05016_1_QOOAA.jpg" alt="" style="display:block; width: 250px; margin: 0 auto;"/>
+                <p>
+                    「面對毒品誘惑，請勇敢大聲說『不』！」國立高雄大學春暉社及戲劇社學生20日至鄰近援中國小進行「紫錐花運動--拒毒萌芽」宣導活動，透過活潑生動戲劇表演，將毒品危害、拒絕技巧傳達給現場上千名學童，同時安排有獎徵答吸引搶答，炒熱氣氛之餘也將「反毒種苗」深植心靈。
+                </p>
+                <p>
+                    為了讓學童牢記千萬不可碰毒，還發送教育部「無毒大丈夫」漫畫，內容強調「拉K一時、尿布一世」的可怕後果。
+                </p>
+
+            </article>
+            <article class="grid">
+                <header>
+                    <h3>  學務處帶領春暉社及戲劇社學生前進國小宣導反毒</h3>
+                </header>
+                <img src="http://news.nuk.edu.tw/~adnuk/Images/event/IMG_0909_1_20141013.jpg" alt="" style="display:block; width: 250px; margin: 0 auto;"/>
+                <p>
+                    國立高雄大學體育室主辦的「高大運動嘉年華」13日晚間開鑼，將進行籃球、羽球、排球、桌球、壘球等多項賽事，12月則邀請傑出運動名人分享訓練奪牌心路歷程。校長黃肇瑞致詞時指出，開幕場地「洪四川運動廣場」為高雄企業家洪四川所捐贈，長期熱心推動體育教育，日前獲教育部表揚，以此勉勵學生除了心懷感念，也能自我期許往後有能力回饋社會、造福學子，綿延不絕善的能量。相關賽程及規則可見體育室網站：http://goo.gl/5KULJW。
+                </p>
+
+            </article>
+            <a class="expend-button"><span>更多</span></a>
+        </div>
+        <div class="box-transparent">
+        </div>
+        <div class="box">
+            <h1>服務系統</h1>
+
+            <div class="grid">
+                <header>
+                    <h3>學務系統</h3>
+                </header>
+                <ul class="link-list">
+                    <li>就學貸款系統</li>
+                    <li>學雜費減免系統</li>
+                    <li>社團管理系統</li>
+                    <li>生活學習管理系統</li>
+                    <li>請假系統</li>
+                </ul>
+            </div>
+
+            <div class="grid">
+                <header>
+                    <h3>教務系統</h3>
+                </header>
+                <ul class="link-list">
+                    <li>大學生學習成效問卷調查(COLA)</li>
+                    <li>e起來高大教學平台</li>
+                    <li>學生生涯歷程檔案</li>
+                    <li>高東屏跨校中英文檢測平台</li>
+                </ul>
+            </div>
+
+            <div class="grid">
+                <header>
+                    <h3>校園網路資源系統</h3>
+                </header>
+                <ul class="link-list">
+                    <li>學生網路信箱</li>
+                    <li>無線網路</li>
+                    <li>郵件查詢</li>
+                    <li>宿網停權名單</li>
+                    <li>電子資源檢索</li>
+                </ul>
+            </div>
+
+            <div class="grid">
+                <header>
+                    <h3>校園網路資源系統</h3>
+                </header>
+                <ul class="link-list">
+                    <li>學生網路信箱</li>
+                    <li>無線網路</li>
+                    <li>郵件查詢</li>
+                    <li>宿網停權名單</li>
+                    <li>電子資源檢索</li>
+                </ul>
+            </div>
+
+            <div class="grid">
+                <header>
+                    <h3>校園網路資源系統</h3>
+                </header>
+                <ul class="link-list">
+                    <li>學生網路信箱</li>
+                    <li>無線網路</li>
+                    <li>郵件查詢</li>
+                    <li>宿網停權名單</li>
+                    <li>電子資源檢索</li>
+                </ul>
+            </div>
+
+            <div class="grid">
+                <header>
+                    <h3>其他服務系統</h3>
+                </header>
+                <ul class="link-list">
+                    <li>學生網路信箱</li>
+                    <li>無線網路</li>
+                    <li>郵件查詢</li>
+                    <li>宿網停權名單</li>
+                    <li>電子資源檢索</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+
+        </footer>
+    </section>
+
+
+    <section id="departments" class="content">
+        <div class="box-transparent">
+            <h3>行政單位</h3>
+        </div>
+        <div class="box center">
+            <div class="grid">
+                <ul class="link-list">
+                    <li>校長室</li>
+                    <li>副校長室</li>
+                    <li>祕書室</li>
+                    <li>教務處</li>
+                    <li>學務處</li>
+                    <li>總務處</li>
+                </ul>
+            </div>
+            <div class="grid">
+                <ul class="link-list">
+                    <li>教學發展中心</li>
+                    <li>圖書資訊管</li>
+                    <li>研究發展處</li>
+                    <li>國際發展事物處</li>
+                    <li>推廣教育中心</li>
+                    <li>人事室</li>
+                </ul>
+            </div>
+            <div class="grid">
+                <ul class="link-list">
+                    <li>主計室</li>
+                    <li>體育室</li>
+                    <li>駐校藝術家</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box-transparent">
+            <h3>教學單位</h3>
+        </div>
+        <div class="box-transparent">
+            <ul class="link-menu">
+                <li><a href="http://gec.nuk.edu.tw/">通識教育中心</a></li>
+                <li><a href="http://www.emba.nuk.edu.tw/">高階人才培育中心</a></li>
+                <li><a href="http://www2.nuk.edu.tw/clc/lc">語文中心</a></li>
+            </ul>
+        </div>
+        <div class="box center">
+            <div class="grid">
+                <header>
+                    <h3>人文社會學院</h3>
+                </header>
+                <img src="http://www.nuk.edu.tw/Images/hss.jpg" alt=""/>
+                <ul class="link-list">
+                    <li>西洋語文學系</li>
+                    <li>運動健康與休閒學系</li>
+                    <li>創意設計與建築學系</li>
+                    <li>東亞語文學系</li>
+                    <li>運動競技學系</li>
+                    <li>越南研究中心</li>
+                </ul>
+            </div>
+            <div class="grid">
+                <header>
+                    <h3>管理學院</h3>
+                </header>
+                <img src="http://www.nuk.edu.tw/Images/img_teaching_03.gif" alt=""/>
+                <ul class="link-list">
+                    <li>應用經濟學系</li>
+                    <li>金融管理學系</li>
+                    <li>資訊管理學系</li>
+                    <li>經營管理研究所</li>
+                    <li>亞太工商管理學系</li>
+                    <li>國際商業管理碩士學位學程</li>
+                    <li>社會網絡創新中心</li>
+                    <li>區域經濟與產業發展中心</li>
+                </ul>
+            </div>
+            <div class="grid">
+                <header>
+                    <h3>法學院</h3>
+                </header>
+                <img src="http://www.nuk.edu.tw/Images/img_teaching_02.gif" alt=""/>
+                <ul class="link-list">
+                    <li>法律學系</li>
+                    <li>政治法律學系</li>
+                    <li>財經法律學系</li>
+                    <li>法律服務社</li>
+                    <li>研究中心</li>
+                </ul>
+            </div>
+            <div class="grid">
+                <header>
+                    <h3>理學院</h3>
+                </header>
+                <img src="http://www.nuk.edu.tw/Images/img_teaching_04.gif" alt=""/>
+                <ul class="link-list">
+                    <li>應用數學系</li>
+                    <li>應用化學系</li>
+                    <li>應用物理學系</li>
+                    <li>統計學研究所</li>
+                    <li>生命科學系</li>
+                    <li>生命科技研究所</li>
+                </ul>
+            </div>
+            <div class="grid">
+                <header>
+                    <h3>工學院</h3>
+                </header>
+                <img src="http://www.nuk.edu.tw/Images/img_teaching_05.gif" alt=""/>
+                <ul class="link-list">
+                    <li>電機工程學系</li>
+                    <li>土木與環境工程學系</li>
+                    <li>化學工程及材料工程學系</li>
+                    <li>資訊工程系</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <footer>
+            <img src="images/logo-footer.png" alt=""/>
+            <address>
+                <a href="https://www.google.com.tw/maps/place/811%E9%AB%98%E9%9B%84%E5%B8%82%E6%A5%A0%E6%A2%93%E5%8D%80%E9%AB%98%E9%9B%84%E5%A4%A7%E5%AD%B8%E8%B7%AF700%E8%99%9F%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%A4%A7%E5%AD%B8/@22.7333658,120.284646,17z/data=!4m7!1m4!3m3!1s0x346e0f11ea5bfd07:0xf51481170bb08020!2zODEx6auY6ZuE5biC5qWg5qKT5Y2A6auY6ZuE5aSn5a246LevNzAw6Jmf5ZyL56uL6auY6ZuE5aSn5a24!3b1!3m1!1s0x346e0f11ea5bfd07:0xf51481170bb08020" target="_blank">81148 高雄市楠梓區高雄大學路700號</a><br />
+                Tel: <a href="tel:+88675919000">+886-7-591-9000</a>,
+                Fax: <a href="fax:+88675919083">+886-7-591-9083</a>
+            </address>
+            <span></span>
+        </footer>
+    </section>
+
+    <script type='text/javascript' src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+
+    <script>
+        var previous_page = "students";
+
+        function active_page() {
+            page = $(this).attr("id");
+            page = page.substr(3);
+            console.log(page);
+
+            if(page == previous_page) return;
+
+            $("#mi-"+page).addClass("active");
+            $("#mi-"+previous_page).removeClass("active");
+
+            $("#"+page).addClass("active");
+            $("#"+previous_page).removeClass("active");
+
+            $("#"+page).addClass("active");
+            $("#"+previous_page).removeClass("active");
+
+            window.scrollTo(0, 0);
+            previous_page = page;
+        }
+        $("#mi-students").hover( active_page );
+        $("#mi-teachers").hover( active_page );
+        $("#mi-departments").hover( active_page );
+
+    </script>
+</body>
+</html>
